@@ -13,7 +13,7 @@
         grid-template-columns: inherit;
         gap: 3rem;
         article{
-            margin: 2rem auto;
+            margin: 1.5rem auto;
             @include justify-content(center);
             &:first-of-type{
                 grid-column-start: 1;
