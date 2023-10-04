@@ -1,0 +1,37 @@
+.carousel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 80%;
+    max-width: 80%;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+}
+.carousel-item{
+    flex: 0 0 20%; 
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.carousel img {
+    width: auto;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: .8;
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+
+

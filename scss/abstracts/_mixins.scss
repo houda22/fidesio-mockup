@@ -1,0 +1,78 @@
+
+@mixin box-sizing($type){
+    -webkit-box-sizing:$type;
+      -moz-box-sizing:$type;
+        box-sizing:$type;
+  }
+  
+  @mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+    
+  @mixin inline-flex {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  @mixin align-items($value){
+    -webkit-box-align: $value;
+      -moz-box-align: $value;
+        -ms-flex-align: $value;
+          -webkit-align-items: $value;
+            align-items: $value;
+  }
+  @mixin justify-content($value) {
+      -webkit-box-pack:  $value;
+         -moz-box-pack: $value;
+         -ms-flex-pack:  $value;
+         -webkit-justify-content: $value;
+            justify-content: $value;
+  }
+  @mixin flex-direction($direction){
+    -webkit-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+        flex-direction: $direction;
+  }
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+      -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+  }
+  @mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;       
+        box-shadow: $shadow;
+  }
+  @mixin transform($transforms) {
+    -webkit-transform: $transforms;
+      -moz-transform: $transforms;
+        -ms-transform: $transforms;
+          transform: $transforms;
+  }
+  @mixin appearance($value){
+    -webkit-appearance: $value;
+     -moz-appearance:   $value;
+      appearance:       $value;
+    
+  }
+  @mixin opacity($opacity) {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity*100});
+    filter: alpha(opacity=$opacity*100);
+    -moz-opacity: $opacity;
+      -khtml-opacity: $opacity;
+         opacity: $opacity;
+  }
+  @mixin rotate($value){
+    -webkit-transform: rotate($value);
+      -moz-transform: rotate($value);
+       -ms-transform: rotate($value); 
+        -o-transform: rotate($value);
+           transform: rotate($value);
+  }
+ 

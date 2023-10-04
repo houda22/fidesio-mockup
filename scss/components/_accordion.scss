@@ -1,0 +1,56 @@
+/* Styles pour l'accordéon */
+.accordion{
+    .accordion-item{
+        position: relative;
+        bottom: -3rem;
+        padding: 0 2.5rem;
+        @include border-radius(10px);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        .accordion-content {
+            display: none;
+           
+            &.active {
+                display: block;
+                position: relative;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $colorLightBlue;
+            }
+        }
+        &.first{
+            .accordion-button{
+                position: relative;
+                top: 2rem;
+            }
+            
+            
+        }
+        &.second{
+            bottom: -5rem;
+            background-color: $colorCeruleanBlue;
+            z-index: 100;
+        }
+        &.third{
+            bottom: -4rem;
+            z-index: 7;
+            background-color: $colorCoralOrange;
+        }
+        &.fourth{
+            background-color: $colororange;
+        }
+    }
+   
+    .accordion-button {
+        padding: 1.75rem 0;
+        font-size: 2.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        
+    }
+}
+
+  
+
+  
+ 
