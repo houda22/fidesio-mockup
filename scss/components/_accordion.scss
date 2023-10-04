@@ -16,6 +16,12 @@
                 font-size: 1rem;
                 font-weight: 400;
                 color: $colorLightBlue;
+                @media (min-width: $lg){
+                    h2{
+                        width: 18rem;
+                    }
+                }
+                
             }
         }
         &.first{

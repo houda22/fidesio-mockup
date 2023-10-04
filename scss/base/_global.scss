@@ -6,6 +6,12 @@ body, h1, h2, p, ul, li, a {
 body{
     font-family: sans-serif;
     background-color: $colorOffWhite;
+    section{
+        margin: 1rem;
+        @media (min-width: $lg){
+            margin: 53px 63px;
+        }
+    }
 }
 h1{
     color: $colorwhite;

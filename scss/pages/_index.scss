@@ -2,20 +2,26 @@
     background-color: $colorblue;
     position: relative;
     @include border-radius(10px);
-    margin: 53px 63px;
     h2{
         padding: 5rem 0;
         font-size: 1.5rem;
         color: $colorwhite;
     }
     .custom-svg{
-        position: absolute;
-        top: -5rem;
-        right: 2.875rem;
-        z-index: 101;
+        display: none;
+        @media (min-width: $lg){
+            display: block;
+            position: absolute;
+            top: -5rem;
+            right: 2.875rem;
+            z-index: 101;
+        }
     }
     .custom-svg + p{
-        width: 26.125rem;
+        @media (min-width: $lg){
+            width: 26.125rem;
+        }
+        
         position: relative;
         padding-top: .875rem;
         &:before{

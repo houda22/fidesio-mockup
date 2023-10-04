@@ -1,1 +1,52 @@
 $font-base: 'Roboto';
+
+
+
+//Media query
+$small: 320px;
+$meduim: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+$xxxl: 1500px;
+$dev-4k: 2050px; 
+
+
+
+//Font size
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-xs: 10px;
+$font-size-meduim: 18px;
+h1{
+   font-size:  1.875rem;
+} 
+h2{
+    font-size: 1rem;
+} 
+h3{
+    font-size: .875rem
+} 
+h4{
+    font-size: .625rem
+} 
+
+
+@media (min-width: $meduim){
+    h1{
+        font-size: 2rem;
+     } 
+     h2{
+         font-size: 1.625rem;
+     }
+    h3{
+        font-size: 1.25rem;
+    }
+}
+@media (min-width: $lg){
+    h1{
+        font-size: 2.5rem;
+    }
+    
+}
+
